@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Somewhere Between Art & Stars — an interactive exhibition catalogue for one day."
+    />
+    <title>Somewhere Between Art & Stars</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <section class="cover" aria-labelledby="cover-title" data-cover>
+        <div class="cover__rule" aria-hidden="true"></div>
+
+        <div class="cover__content">
+          <h1 id="cover-title">
+            <span>Somewhere Between</span>
+            <span>Art &amp; Stars</span>
+          </h1>
+        </div>
+
+        <div class="cover__details">
+          <p>Saturday • 18 July</p>
+          <p>For Naomi</p>
+        </div>
+
+        <button class="open-button" type="button" data-open>Open</button>
+      </section>
+
+      <div class="experience" id="invitation" data-experience hidden>
+        <section class="invitation floating-page" aria-labelledby="invitation-title">
+        <div class="page-number" aria-hidden="true">01</div>
+
+        <p class="section-label">Invitation</p>
+        <h2 id="invitation-title">I thought we could spend the day wandering through art, and end it somewhere under the stars.</h2>
+
+        <div class="invitation__copy">
+          <p>
+            A few places to wander through, something to eat, and the
+            planetarium.
+          </p>
+          <p>
+            A small guide for the day, and a playlist for the week.
+          </p>
+        </div>
+        </section>
+
+        <section class="catalogue-section floating-page" aria-labelledby="expect-title">
+        <div class="page-number" aria-hidden="true">02</div>
+
+        <p class="section-label">What to expect</p>
+        <h2 id="expect-title">Four parts, loosely held.</h2>
+
+        <div class="expect-grid">
+          <article>
+            <span>01</span>
+            <h3>Art</h3>
+            <p>A few places to wander through slowly.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>In Between</h3>
+            <p>A little room for walking, smoke breaks, and whatever comes up naturally.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Food</h3>
+            <p>A proper pause somewhere along the way.</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>Stars</h3>
+            <p>The day ends by looking up for a while.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="catalogue-section playlist floating-page" aria-labelledby="playlist-title">
+        <div class="page-number" aria-hidden="true">03</div>
+
+        <p class="section-label">Playlist</p>
+        <h2 id="playlist-title">A soundtrack for the week.</h2>
+        <p>
+          Some current favourites, and a small window into what I listen to.
+        </p>
+
+        <a class="pill-button pill-button--dark" href="#" aria-label="Open Apple Music playlist">Open Playlist</a>
+        </section>
+
+        <section class="catalogue-section route floating-page" aria-labelledby="route-title">
+        <div class="page-number" aria-hidden="true">04</div>
+
+        <p class="section-label">Route</p>
+        <h2 id="route-title">A few places on the route.</h2>
+
+        <div class="route-list">
+          <article class="route-card">
+            <p class="route-card__type">Art</p>
+            <h3>Zeitz MOCAA</h3>
+            <p>A place to start slowly, look around, and see what catches us.</p>
+          </article>
+
+          <article class="route-card">
+            <p class="route-card__type">In Between</p>
+            <h3>Somewhere to pause</h3>
+            <p>A walk, a smoke break if we feel like it, and something light to eat before the stars.</p>
+          </article>
+
+          <article class="route-card">
+            <p class="route-card__type">Stars</p>
+            <h3>Iziko Planetarium</h3>
+            <p>The fixed point in the day. Sunstruck at 14:00.</p>
+          </article>
+
+          <article class="route-card route-card--optional">
+            <p class="route-card__type">Optional</p>
+            <h3>South African National Gallery</h3>
+            <p>If the day wants one more room.</p>
+          </article>
+        </div>
+        </section>
+
+        <section class="catalogue-section locked floating-page" aria-labelledby="locked-title">
+        <div class="page-number" aria-hidden="true">05</div>
+
+        <p class="section-label">Saturday</p>
+        <h2 id="locked-title">The rest can wait until then.</h2>
+
+        <p>
+          On the day, this becomes a quiet guide for where we’re headed next —
+          and a place to keep a few things worth remembering.
+        </p>
+
+        <button class="pill-button pill-button--muted" type="button" disabled>Coming Soon</button>
+        </section>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
