@@ -352,31 +352,41 @@ h3 {
 }
 
 .playlist-card {
+  display: flex;
+  min-height: 16rem;
+  flex-direction: column;
+  justify-content: space-between;
   padding: clamp(1.2rem, 3vw, 2rem);
   border-radius: 1.25rem;
   background: rgba(255, 252, 246, 0.58);
+  color: var(--ink);
+  text-decoration: none;
   box-shadow:
     0 1.4rem 2.6rem rgba(51, 39, 28, 0.07),
     inset 0 1px 0 rgba(255, 255, 255, 0.58);
+  transition:
+    background 180ms ease,
+    box-shadow 180ms ease,
+    transform 180ms ease;
+}
+
+.playlist-card:hover,
+.playlist-card:focus-visible {
+  background: rgba(255, 252, 246, 0.76);
+  box-shadow:
+    0 1.8rem 3.2rem rgba(51, 39, 28, 0.11),
+    inset 0 1px 0 rgba(255, 255, 255, 0.72);
+  outline: none;
+  transform: translateY(-2px);
 }
 
 .playlist-card__label {
-  margin-bottom: 4rem;
+  margin-bottom: 0;
   color: var(--muted);
   font-size: 0.72rem;
   font-weight: 700;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-}
-
-.playlist-card > p:not(.playlist-card__label) {
-  max-width: 25rem;
-  color: var(--muted);
-  line-height: 1.6;
-}
-
-.playlist-card .pill-button {
-  margin-top: 1.2rem;
 }
 
 .locked > p {
@@ -513,15 +523,12 @@ h3 {
   }
 
   .playlist-card {
+    min-height: 12rem;
     padding: 1.2rem;
   }
 
   .playlist-card + .playlist-card {
     margin-top: 1rem;
-  }
-
-  .playlist-card__label {
-    margin-bottom: 2.4rem;
   }
 
   .route-card__type {
