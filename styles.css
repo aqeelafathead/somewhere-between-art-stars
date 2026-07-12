@@ -82,6 +82,10 @@ main {
   transform: translateY(-1.5rem);
 }
 
+.cover.is-hidden {
+  display: none;
+}
+
 .experience {
   display: grid;
   gap: clamp(2rem, 5vw, 4rem);

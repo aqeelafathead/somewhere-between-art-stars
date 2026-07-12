@@ -11,6 +11,7 @@ openButton?.addEventListener("click", () => {
       experience.hidden = false;
     }
 
+    cover?.classList.add("is-hidden");
     invitation?.scrollIntoView({ behavior: "smooth", block: "start" });
   }, 260);
 });
