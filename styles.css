@@ -344,6 +344,41 @@ h3 {
   line-height: 1.6;
 }
 
+.playlist-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 4rem;
+}
+
+.playlist-card {
+  padding: clamp(1.2rem, 3vw, 2rem);
+  border-radius: 1.25rem;
+  background: rgba(255, 252, 246, 0.58);
+  box-shadow:
+    0 1.4rem 2.6rem rgba(51, 39, 28, 0.07),
+    inset 0 1px 0 rgba(255, 255, 255, 0.58);
+}
+
+.playlist-card__label {
+  margin-bottom: 4rem;
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.playlist-card > p:not(.playlist-card__label) {
+  max-width: 25rem;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.playlist-card .pill-button {
+  margin-top: 1.2rem;
+}
+
 .locked > p {
   max-width: 38rem;
   margin-left: auto;
@@ -470,6 +505,23 @@ h3 {
   .route-card {
     display: block;
     padding: 1.2rem;
+  }
+
+  .playlist-grid {
+    display: block;
+    margin-top: 2.5rem;
+  }
+
+  .playlist-card {
+    padding: 1.2rem;
+  }
+
+  .playlist-card + .playlist-card {
+    margin-top: 1rem;
+  }
+
+  .playlist-card__label {
+    margin-bottom: 2.4rem;
   }
 
   .route-card__type {
